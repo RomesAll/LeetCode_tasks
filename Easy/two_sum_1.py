@@ -23,7 +23,7 @@ class Solution:
 
     def check_condition(self, nums:list, target: int) -> bool:
         
-        if 2 <= len(nums) <= 10**4 or -10**9 <= target <= 10**9:
+        if (2 <= len(nums) <= 10**4) or (-10**9 <= target <= 10**9):
             for index, value in enumerate(nums,1):
                 if not(-10**9 <= value <= 10**9):
                     return False
