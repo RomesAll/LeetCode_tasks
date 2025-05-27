@@ -2,7 +2,7 @@ class Solution:
     
     def twoSum(self, nums:list, target: int) -> list[int]:
         
-        result_sum_index = []
+        result_sum_index = [] # Список для хранения индексов 
 
         if self.check_condition(nums, target):
             srez = None
