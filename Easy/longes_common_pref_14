@@ -1,0 +1,11 @@
+class Solution:
+    def longestCommonPrefix(self, strs) -> str:
+        res_string = ''
+        min_len_string = min(strs,key=len)
+        for char in min_len_string:
+            if res_string + char in strs[1]:
+                print(1)
+
+
+s = Solution()
+print(s.longestCommonPrefix(["flower","flow","flight"]))
